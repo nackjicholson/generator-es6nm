@@ -7,7 +7,7 @@ describe('generator', function () {
 	beforeEach(function (cb) {
 		var deps = ['../app'];
 
-		helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
+		helpers.testDirectory(path.join(__dirname, 'tmp'), function (err) {
 			if (err) {
 				cb(err);
 				return;
