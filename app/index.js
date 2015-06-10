@@ -44,7 +44,6 @@ module.exports = yeoman.generators.Base.extend({
       props.name = this.user.git.name();
       props.email = this.user.git.email();
       props.camelModuleName = _s.camelize(props.moduleName);
-      console.log(props);
       this.props = props;
       // To access props later use this.props.someOption;
 
