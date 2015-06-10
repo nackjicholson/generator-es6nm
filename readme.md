@@ -4,6 +4,9 @@
 
 ![](screenshot.png)
 
+## Example
+
+Check out [reqo](https://github.com/CascadeEnergy/reqo). An example module built from this generator.
 
 ## Install
 
