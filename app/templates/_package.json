@@ -1,0 +1,38 @@
+{
+  "name": "<%= moduleName %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "repository": "<%= githubUsername %>/<%= moduleName %>",
+  "author": {
+    "name": "<%= name %>",
+    "email": "<%= email %>"
+  },
+  "main": "es5/index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/gulp coverage"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= githubUsername %>/<%= moduleName %>/issues"
+  },
+  "homepage": "https://github.com/<%= githubUsername %>/<%= moduleName %>#readme",
+  "devDependencies": {
+    "babel": "^5.2.17",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-mocha": "^2.0.1",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3",
+    "jshint-stylish": "^1.0.2",
+    "mocha": "^2.2.4",
+    "require-dir": "^0.3.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.2.17",
+  }
+}
