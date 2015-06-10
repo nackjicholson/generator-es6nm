@@ -17,7 +17,7 @@ $ npm install --global generator-es6nm
 With [yo](https://github.com/yeoman/yo):
 
 ```
-$ yo nm
+$ yo es6nm
 ```
 
 
@@ -28,4 +28,4 @@ Use [chalk](https://github.com/sindresorhus/chalk) if you want colors in your CL
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Will Vaughn](http://twitter.com/nackjicholson)
