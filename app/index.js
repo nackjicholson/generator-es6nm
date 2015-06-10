@@ -89,6 +89,16 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('travis.yml'),
         this.destinationPath('.travis.yml')
       );
+    },
+    gulpFiles: function() {
+      this.fs.copy(
+        this.templatePath('gulpfile.js'),
+        this.destinationPath('gulpfile.js')
+      );
+      this.directory(
+        this.templatePath('gulp'),
+        this.destinationPath('gulp')
+      );
     }
   },
 	install: function() {

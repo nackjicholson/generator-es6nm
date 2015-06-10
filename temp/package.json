@@ -1,11 +1,11 @@
 {
-  "name": "<%= moduleName %>",
+  "name": "test",
   "version": "0.0.0",
-  "description": "<%= description %>",
-  "repository": "<%= githubUsername %>/<%= moduleName %>",
+  "description": "test",
+  "repository": "test/test",
   "author": {
-    "name": "<%= name %>",
-    "email": "<%= email %>"
+    "name": "Will Vaughn",
+    "email": "willieviseoae@gmail.com"
   },
   "main": "es5/index.js",
   "engines": {
@@ -15,9 +15,9 @@
     "test": "./node_modules/.bin/gulp coverage"
   },
   "bugs": {
-    "url": "https://github.com/<%= githubUsername %>/<%= moduleName %>/issues"
+    "url": "https://github.com/test/test/issues"
   },
-  "homepage": "https://github.com/<%= githubUsername %>/<%= moduleName %>#readme",
+  "homepage": "https://github.com/test/test#readme",
   "devDependencies": {
     "babel": "^5.2.17",
     "gulp": "^3.8.11",

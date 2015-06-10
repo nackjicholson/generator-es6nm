@@ -8,7 +8,7 @@
 ## Install
 
 ```
-$ npm install --global generator-nm
+$ npm install --global generator-es6nm
 ```
 
 

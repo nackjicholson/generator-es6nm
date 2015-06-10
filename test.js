@@ -13,51 +13,37 @@ describe('generator', function () {
 				return;
 			}
 
-			this.generator = helpers.createGenerator('nm:app', deps, null, {skipInstall: true});
+			this.generator = helpers.createGenerator('es6nm:app', deps, null, {skipInstall: true});
 			cb();
 		}.bind(this));
 	});
 
 	it('generates expected files', function (cb) {
 		var expected = [
-			'.editorconfig',
-			'.gitattributes',
 			'.gitignore',
 			'.jshintrc',
 			'.travis.yml',
-			'index.js',
-			'license',
-			'package.json',
-			'readme.md',
-			'test.js'
+			'es6/index.js',
+      'es6/test/index.js',
+      'package.json',
+      'README.md',
+      'gulpfile.js',
+      'gulp/default.js',
+      'gulp/jscs.js',
+      'gulp/lint.js',
+      'gulp/test.js',
+      'gulp/transpile.js',
+      'gulp/watch.js'
 		];
 
 		helpers.mockPrompt(this.generator, {
 			moduleName: 'test',
 			githubUsername: 'test',
-			website: 'test.com',
-			cli: false
+      description: 'test'
 		});
 
 		this.generator.run(function () {
 			assert.file(expected);
-			cb();
-		});
-	});
-
-	it('CLI option', function (cb) {
-		helpers.mockPrompt(this.generator, {
-			moduleName: 'test',
-			githubUsername: 'test',
-			website: 'test.com',
-			cli: true
-		});
-
-		this.generator.run(function () {
-			assert.file('cli.js');
-			assert.fileContent('package.json', /"bin":/);
-			assert.fileContent('package.json', /"bin": "cli.js"/);
-			assert.fileContent('package.json', /"meow"/);
 			cb();
 		});
 	});
