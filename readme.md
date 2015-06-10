@@ -1,4 +1,4 @@
-# generator-es6nm
+# generator-es6nm [![Build Status](https://travis-ci.org/nackjicholson/generator-es6nm.svg?branch=master)](https://travis-ci.org/nackjicholson/generator-es6nm)
 
 > Scaffold out a node module written in ES6
 
