@@ -32,3 +32,5 @@ node_modules
 
 # Temporary
 tmp
+local.yml
+.npmrc
