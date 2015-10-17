@@ -1,5 +1,5 @@
-function sum(a, b) {
-  return a + b;
+function sum(alpha, bravo) {
+  return alpha + bravo;
 }
 
 export default sum;
