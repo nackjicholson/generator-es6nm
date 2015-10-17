@@ -21,7 +21,7 @@ describe('generator', function () {
 	it('generates expected files', function (cb) {
 		var expected = [
 			'.gitignore',
-			'.jshintrc',
+			'.eslintrc',
 			'.travis.yml',
 			'es6/index.js',
       'es6/test/index.js',

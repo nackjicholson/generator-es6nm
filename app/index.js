@@ -52,52 +52,19 @@ module.exports = yeoman.generators.Base.extend({
   },
   writing: {
     moduleFiles: function() {
-      this.fs.copyTpl(
-        this.templatePath('_package.json'),
-        this.destinationPath('package.json'),
-        this.props
-      );
-      this.fs.copyTpl(
-        this.templatePath('_README.md'),
-        this.destinationPath('README.md'),
-        this.props
-      );
-      this.fs.copy(
-        this.templatePath('es6/_index.js'),
-        this.destinationPath('es6/index.js')
-      );
-      this.fs.copy(
-        this.templatePath('es6/test/_index.js'),
-        this.destinationPath('es6/test/index.js')
-      );
+      this.template('_package.json', 'package.json', this.props);
+      this.template('_README.md', 'README.md', this.props);
+      this.directory('es6', 'es6');
     },
     configFiles: function() {
-      this.fs.copy(
-        this.templatePath('gitignore'),
-        this.destinationPath('.gitignore')
-      );
-      this.fs.copy(
-        this.templatePath('jscsrc'),
-        this.destinationPath('.jscsrc')
-      );
-      this.fs.copy(
-        this.templatePath('jshintrc'),
-        this.destinationPath('.jshintrc')
-      );
-      this.fs.copy(
-        this.templatePath('travis.yml'),
-        this.destinationPath('.travis.yml')
-      );
+      this.copy('gitignore', '.gitignore');
+      this.copy('jscsrc', '.jscsrc');
+      this.copy('eslintrc', '.eslintrc');
+      this.copy('travis.yml', '.travis.yml');
     },
     gulpFiles: function() {
-      this.fs.copy(
-        this.templatePath('gulpfile.js'),
-        this.destinationPath('gulpfile.js')
-      );
-      this.directory(
-        this.templatePath('gulp'),
-        this.destinationPath('gulp')
-      );
+      this.copy('gulpfile.js', 'gulpfile.js');
+      this.directory('gulp', 'gulp');
     }
   },
 	install: function() {

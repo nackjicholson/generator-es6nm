@@ -1,3 +1,4 @@
+/*eslint-disable */
 'use strict';
 
 var gulp = require('gulp');
@@ -7,7 +8,7 @@ gulp.task('watch', function() {
     'es6/**/*',
     'es6/test/**/*',
     'package.json',
-    '**/.jshintrc'
+    '**/.eslintrc'
   ];
 
   gulp.watch(testFiles, ['test']);
