@@ -1,0 +1,40 @@
+{
+  "name": "<%= moduleName %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "repository": "<%= githubUsername %>/<%= moduleName %>",
+  "author": {
+    "name": "<%= name %>",
+    "email": "<%= email %>"
+  },
+  "license": "MIT",
+  "main": "lib/foo.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= githubUsername %>/<%= moduleName %>/issues"
+  },
+  "homepage": "https://github.com/<%= githubUsername %>/<%= moduleName %>#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-xo-space": "^0.15.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2"
+  },
+  "dependencies": {},
+  "scripts": {
+    "ci": "npm run lint && npm run cov",
+    "cov": "nyc --reporter=html --reporter=text npm test",
+    "lint": "eslint lib test",
+    "test": "mocha --reporter list",
+    "tdd": "watch 'clear && npm run -s test' lib test"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true,
+      "node": true
+    }
+  }
+}
