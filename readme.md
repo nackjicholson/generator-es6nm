@@ -2,8 +2,6 @@
 
 > Scaffold out a node module
 
-![](screenshot.png)
-
 ## Install
 
 ```
