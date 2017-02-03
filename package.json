@@ -1,6 +1,6 @@
 {
   "name": "generator-es6nm",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Scaffold out a node module",
   "license": "MIT",
   "repository": "nackjicholson/generator-es6nm",
