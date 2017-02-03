@@ -20,7 +20,8 @@
     "eslint": "^3.14.1",
     "eslint-config-xo-space": "^0.15.0",
     "mocha": "^3.2.0",
-    "nyc": "^10.1.2"
+    "nyc": "^10.1.2",
+    "watch": "^1.0.1"
   },
   "dependencies": {},
   "scripts": {
